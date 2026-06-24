@@ -100,7 +100,7 @@ adapter.load_state_dict(ckpt['adapter'])
 print("✓ All weights loaded!")
 
 
-#  GENERATE TEXT
+#  GENERATE text
 def eeg_to_text(eeg_array, max_tokens=30):
     encoder.eval(); adapter.eval(); llm.eval()
     with torch.no_grad():
