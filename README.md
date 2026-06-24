@@ -316,7 +316,7 @@ def generate(eeg_array):
                skip_special_tokens=True).strip()
 
 
-#  TRAINING LOOP 
+#  training loop
 print(f"Training {EPOCHS} epochs...\n")
 log_rows         = []
 best_val_loss    = float('inf')
